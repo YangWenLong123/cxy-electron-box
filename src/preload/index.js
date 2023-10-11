@@ -1,3 +1,11 @@
+/*
+ * @Author: along
+ * @Description:
+ * @Date: 2023-10-10 17:46:59
+ * @LastEditors: along
+ * @LastEditTime: 2023-10-11 09:55:07
+ * @FilePath: /cxy-electron/src/preload/index.js
+ */
 import { contextBridge, ipcRenderer } from 'electron'
 import { electronAPI } from '@electron-toolkit/preload'
 

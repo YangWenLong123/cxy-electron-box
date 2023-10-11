@@ -1,14 +1,20 @@
+/*
+ * @Author: along
+ * @Description:
+ * @Date: 2023-10-10 17:46:59
+ * @LastEditors: along
+ * @LastEditTime: 2023-10-11 09:45:12
+ * @FilePath: /cxy-electron/src/renderer/router/index.js
+ */
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Login from '@renderer/views/login/login.vue'
 import Home from '@renderer/views/home/home.vue'
+import Index from '@renderer/views/index.vue'
 
 const routes = [
-    // 精确匹配 #/login，指向Login页面
-    { path: '/login', component: Login, exact: true },
-    // 精确匹配 #/home，指向Home页面
+    { path: '/', component: Index, exact: true },
     { path: '/home', component: Home, exact: true },
-    // 空hash，则跳转至Login页面
-    { path: '', redirect: 'login' },
+    { path: '/login', component: Login, exact: true },
     // 未匹配，则跳转至Login页面
     { path: '/:pathMatch(.*)', redirect: 'login' }
 ]

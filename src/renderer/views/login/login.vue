@@ -1,3 +1,11 @@
+<!--
+ * @Author: along
+ * @Description:
+ * @Date: 2023-10-10 17:46:59
+ * @LastEditors: along
+ * @LastEditTime: 2023-10-11 09:42:43
+ * @FilePath: /cxy-electron/src/renderer/views/login/login.vue
+-->
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
@@ -17,10 +25,10 @@ const onLogin = () => {
     <div class="P-login">
         <img src="./logo.png" class="logo" />
         <div class="ipt-con">
-            <el-input v-model="account" placeholder="账号" />
+            <el-input v-model="account" placeholder="账号:admin" />
         </div>
         <div class="ipt-con">
-            <el-input v-model="password" type="password" placeholder="密码" show-password />
+            <el-input v-model="password" type="password" placeholder="密码:admin" show-password />
         </div>
         <div class="ipt-con">
             <el-button type="primary" style="width: 100%" @click="onLogin">登录</el-button>

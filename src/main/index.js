@@ -1,4 +1,4 @@
-import { app, shell, BrowserWindow, ipcMain, globalShortcut, dialog } from 'electron'
+import { app, shell, BrowserWindow, ipcMain, globalShortcut, dialog, session } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
@@ -19,7 +19,8 @@ function createWindow() {
             // 禁用同源策略，允许跨域请求
             webSecurity: false,
             // 禁止build环境使用DevTool
-            devTools: is.dev ? true : false
+            devTools: is.dev ? true : false,
+            webviewTag: true
         }
     })
 
