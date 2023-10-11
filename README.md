@@ -38,7 +38,7 @@ npm run build:linux
 
 ### mac
 
-http://cdn.alongweb.top/cxy-electron-box-1.0.0-mac
+http://cdn.alongweb.top/cxy-electron-box-1.0.0-mac.zip
 
 ### win
 
