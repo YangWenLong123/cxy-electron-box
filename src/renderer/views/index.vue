@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-10-10 17:46:59
  * @LastEditors: along
- * @LastEditTime: 2023-10-11 10:58:30
+ * @LastEditTime: 2023-10-11 11:02:05
  * @FilePath: /cxy-electron/src/renderer/views/index.vue
 -->
 <script setup>
@@ -33,7 +33,7 @@ onMounted(() => {
 </template>
 
 <style scoped lang="scss">
-.iframe {
-    border: none;
+#iframe {
+    border: none !important;
 }
 </style>

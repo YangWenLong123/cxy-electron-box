@@ -1,5 +1,5 @@
 {
-    "name": "cxy-electron",
+    "name": "cxy-web-box",
     "version": "1.0.0",
     "description": "An Electron application with Vue",
     "main": "./out/main/index.js",
